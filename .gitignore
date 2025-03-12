@@ -1,0 +1,40 @@
+# Compiled class files
+*.class
+
+# Build directories
+/target/
+/build/
+/out/
+
+# IDE-specific files
+.idea/
+*.iml
+.vscode/
+*.sublime-*
+.classpath
+.project
+.settings/
+
+# Logs
+*.log
+
+# Package files
+*.jar
+*.war
+*.ear
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# Gradle
+.gradle/
+build/
+
+# Local configuration files
+application-local.properties
+application-dev.properties

@@ -1,0 +1,19 @@
+version: '3.8'
+services:
+  hello-service:
+    build:
+      context: .
+      dockerfile: hello-service/Dockerfile
+    container_name: hello-service
+    ports:
+      - "8080:8080"
+
+  api-gateway:
+    build:
+      context: .
+      dockerfile: api-gateway/Dockerfile
+    container_name: api-gateway
+    ports:
+      - "8081:8080"
+    depends_on:
+      - hello-service
